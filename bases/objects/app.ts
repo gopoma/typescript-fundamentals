@@ -76,4 +76,6 @@ const apocalipsis: Apocalipsis = {
 let mystique: (Charles | Apocalipsis);
 
 mystique = charles;
+console.log({mystique});
 mystique = apocalipsis;
+console.log({mystique});

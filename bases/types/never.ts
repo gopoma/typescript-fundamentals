@@ -15,5 +15,5 @@
     const foo = (): never => {
         throw new Error("doesn't work");
     };
-    foo();
+    //? foo();
 })();
