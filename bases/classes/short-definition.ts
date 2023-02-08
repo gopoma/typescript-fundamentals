@@ -11,8 +11,8 @@
         }
     }
 
-    console.log(Avenger.avgAge);
+    // console.log(Avenger.avgAge);
     const antman = new Avenger("Antman", "Capitan", "Scott Lang");
-    console.log(Avenger.avgAge);
-    console.log(antman);
+    // console.log(Avenger.avgAge);
+    // console.log(antman);
 })()

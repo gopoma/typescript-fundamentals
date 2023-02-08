@@ -50,16 +50,64 @@ class Persona {
     const flash = {
         name: "Barry Allen",
         age: 25,
-        powers: ["Super velocidad", "Viajar en el tiempo"]
+        powers: [1, 2]
     };
     const anthony = {
         name: "Anthony",
         age: 28,
-        powers: ["Super velocidad"],
+        powers: [1],
         getName() {
             return `[SuperHero] ${this.name}`;
         }
     };
     // console.log(anthony.getName?.());
+})();
+(() => {
+    class Mutant {
+        constructor(age, name, realName) {
+            this.age = age;
+            this.name = name;
+            this.realName = realName;
+        }
+        mutantPower(id) {
+            return `${this.name} ${this.realName}`;
+        }
+    }
+    const magneto = new Mutant(25, "Magneto", "Magnus");
+    //* console.log(magneto);
+    //* console.log(magneto.mutantPower());
+})();
+(() => {
+    const client = {
+        name: "Gustavo",
+        age: 25,
+        address: {
+            id: 125,
+            zip: "KY2 SUD",
+            city: "Tacna"
+        },
+        getFullAddress(id) {
+            return this.address.city;
+        }
+    };
+    const client2 = {
+        name: "Melissa",
+        age: 28,
+        address: {
+            city: "Tacna",
+            id: 120,
+            zip: "K2S U2A"
+        },
+        getFullAddress(id) {
+            return this.address.city;
+        }
+    };
+    //* console.log({client, client2});
+})();
+(() => {
+    let addNumbersFunction;
+    addNumbersFunction = (a, b) => {
+        return 25;
+    };
 })();
 //# sourceMappingURL=main.js.map

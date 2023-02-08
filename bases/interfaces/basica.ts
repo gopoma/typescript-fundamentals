@@ -2,20 +2,20 @@
     interface SuperHero {
         name: string;
         age?: number;
-        powers: string[];
+        powers: number[];
         getName?: () => string;
     }
 
     const flash: SuperHero = {
         name: "Barry Allen",
         age: 25,
-        powers: ["Super velocidad", "Viajar en el tiempo"]
+        powers: [1, 2]
     };
 
     const anthony: SuperHero = {
         name: "Anthony",
         age: 28,
-        powers: ["Super velocidad"],
+        powers: [1],
         getName() {
             return `[SuperHero] ${this.name}`;
         }
